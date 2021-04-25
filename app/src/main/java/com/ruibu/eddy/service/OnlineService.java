@@ -4,6 +4,8 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 
+import com.ruibu.eddy.Util;
+
 import org.ddpush.im.v1.client.appuser.Message;
 import org.ddpush.im.v1.client.appuser.TCPClientBase;
 
@@ -20,7 +22,7 @@ public class OnlineService  extends Service {
 
         @Override
         public boolean hasNetworkConnection() {
-            return false;
+            return Util.hasNetwork(OnlineService.this);
         }
 
         @Override
