@@ -25,6 +25,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <service
+            android:name="com.ruibu.eddy.service.OnlineService" ></service>
+
+        <receiver
+            android:name="com.ruibu.eddy.receiver.TickAlarmReceiver" >
+        </receiver>
+
+
     </application>
 
 </manifest>
